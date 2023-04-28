@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from'react';
 import { motion } from "framer-motion";
 import images from './images';
+import './imageTrack.css';
 
 const ImageTrack = () => {
 

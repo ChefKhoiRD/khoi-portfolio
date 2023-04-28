@@ -3,26 +3,8 @@ body {
   overflow: hidden;
 }
 
-#image-track {
-  cursor: grab;
-  overflow: hidden;
-}
-
-#inner-image-track {
-  display: flex;
-  flex: 1;
-  justify-content: 'flex-end';
-  margin-bottom: 36;
-}
-
-#image-container {
-  min-height: 40rem;
-  width: 30rem;
-  padding: 0.5rem;
-}
-
-#image-container img {
-  width: 40vmin;
-  height: 56vmin;
-  object-position: 100% 50%;
+.image-track {
+  left: 0;
+  bottom: 0;
+  right: 0;
 }

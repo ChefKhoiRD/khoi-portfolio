@@ -7,8 +7,12 @@ function App() {
   return (
     <main>
       <div className="home-page">
-        <Navbar />
-        <ImageTrack />
+        <div className='navbar'>
+          <Navbar />
+        </div>
+        <div className='image-track'>
+          <ImageTrack />
+        </div>
       </div>
     </main>
   );
