@@ -1,0 +1,13 @@
+.navbar-name {
+    display: inline;
+    padding-left: 1.8rem;
+    font-weight: 600;
+    color: #53C783;
+}
+
+.navbar-name-title {
+    display: inline;
+    color: #B4B4B4;
+    font-size: 25px;
+    font-weight: 400;
+}
