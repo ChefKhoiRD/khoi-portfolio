@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from'react';
 import { motion } from "framer-motion";
-import images from './images';
+import { projects } from './projects/data';
 import './imageTrack.css';
 
 const ImageTrack = () => {
@@ -12,22 +12,29 @@ const ImageTrack = () => {
         setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
     }, [])
 
+    // Carousel cards
+    const [isOpen, setIsOpen] = useState(false);
+
+    // Page html
     return (
         <div>
+            {/* Carousel container */}
             <motion.div ref={carousel} id="image-track" className="home-page">
-            <motion.div 
-            drag="x"
-            dragConstraints={{ right: 0, left: -width }}
-            id="inner-image-track"
-            >
-                {images.map(image => {
-                return (
-                    <motion.div id='image-container'>
-                    <img src={image} alt="" key="" draggable="false" />
-                    </motion.div>
-                    );
-                })}
-            </motion.div>
+                {/* Image container */}
+                <motion.div 
+                    drag="x"
+                    dragConstraints={{ right: 0, left: -width }}
+                    id="inner-image-track"
+                >
+                    {/* Images */}
+                    {projects.map((project) => {
+                    return (
+                        <motion.div id='image-container'>
+                            <img src={project.image2} alt="" key="" draggable="false" />
+                        </motion.div>
+                        );
+                    })}
+                </motion.div>
             </motion.div>
         </div>
         

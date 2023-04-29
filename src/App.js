@@ -9,7 +9,7 @@ function App() {
       <div className="home-page">
         <div className='navbar'>
           <Navbar />
-        </div>
+        </div>  
         <div className='image-track'>
           <ImageTrack />
         </div>
